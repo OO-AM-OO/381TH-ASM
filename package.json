@@ -1,0 +1,15 @@
+{
+	"name": "comps381f-exam",
+	"description": "comps381f-exam",
+	"version": "1.0.0",
+	"dependencies": {
+		"ejs": "*",
+		"express": "*",
+		"formidable": "latest",
+		"exif": "*"
+	},
+	"scripts": {
+		"start": "node server.js"
+	},
+	"engine": "*"
+}

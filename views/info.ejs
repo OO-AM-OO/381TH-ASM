@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h1><%=newpho.title %></h1>
+        <p><%=newpho.description %></p>
+            <img src="data:<%=newpho.mimetype%>;base64,<%=newpho.image%>" style="width:90%" />
+            <ul>
+                <li>Make: <%=newpho.make %></li>
+                <li>Model: <%=newpho.model %></li>
+                <li>Created On: <%=newpho.created %></li>       
+                <li>Location:<%if(gps){%>
+                        <a href="/map?lat=<%=newpho.lat %>&lon=<%=newpho.lon %>">Map</a></li> <%}%>
+            </ul>
+            <a href="/"> <button>Home</button></a>
+</body>
+</html>
